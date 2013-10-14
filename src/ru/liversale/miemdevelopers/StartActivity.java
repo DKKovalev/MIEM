@@ -33,4 +33,8 @@ public class StartActivity extends Activity implements View.OnClickListener {
     public void onBackPressed() {
        // super.onBackPressed();    //To change body of overridden methods use File | Settings | File Templates.
     }
+
+    public void startLessonThree(View v){
+        startActivity(new Intent(this,LessonThreeActivity.class));
+    }
 }

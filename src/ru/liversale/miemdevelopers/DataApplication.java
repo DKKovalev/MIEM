@@ -15,7 +15,9 @@ public class DataApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        startService(new Intent(this,HeartBeatService.class));
+       // startService(new Intent(this,HeartBeatService.class));
+        new SharedPreferenceManager(this);
+        new DatabaseHandler(this);
     }
 
     @Override
